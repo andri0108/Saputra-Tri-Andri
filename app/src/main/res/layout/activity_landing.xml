@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <Button
+            android:id="@+id/btndaftar"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="Daftar" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"/>
+
+        <Button
+            android:id="@+id/btnlogin"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="Masuk" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

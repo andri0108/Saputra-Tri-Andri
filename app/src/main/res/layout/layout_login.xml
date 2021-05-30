@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Login"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <android.support.design.widget.TextInputLayout
+
+
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <EditText
+                android:id="@+id/txtemail"
+                style="@style/modifiedEditText"
+                android:hint="Email"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <EditText
+
+                android:id="@+id/txtpassword"
+                style="@style/modifiedEditText"
+                android:hint="Password"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnlogin"
+            style="@style/loginButton"
+            android:text="Masuk"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
